@@ -1,0 +1,22 @@
+
+html {
+    box-sizing: border-box;
+    color: #000;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 50px;
+}
+
+.chart-item {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+    border: 2px solid cornflowerblue;
+}
