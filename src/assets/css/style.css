@@ -10,13 +10,9 @@ html {
 }
 
 body {
-    margin: 50px;
+    margin:0px;
 }
 
-.chart-item {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-
-    border: 2px solid cornflowerblue;
+canvas {
+    border: 1px dotted red;
 }

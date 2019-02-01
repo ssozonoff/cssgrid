@@ -1,19 +1,23 @@
 <template>
 
     <div class="container">
-        <chart msg="1"/>
 
-        <chart msg="2"/>
-
-        <chart msg="3"/>
-
-        <chart msg="4"/>
+        <chart chartsize="chart-item"/>
+        <chart chartsize="chart-item"/>
+        <chart chartsize="chart-item"/>
+        <chart chartsize="chart-item"/>
+        <chart chartsize="chart-item"/>
+        <chart chartsize="chart-item"/>
+        <chart chartsize="chart-item"/>
+        <chart chartsize="chart-item"/>
+        <chart chartsize="chart-item"/>
+        <chart chartsize="chart-item"/>
     </div>
 
 </template>
 
 <script>
-    import chart from './components/Chart.vue'
+    import chart from './components/MyChart.vue'
 
     export default {
         name: 'app',
@@ -33,9 +37,70 @@
         margin-top: 60px;
     }
 
+    .chart-item {
+        height: 100%;
+    }
+
+    .wrap {
+        min-width: 0;
+    }
+
+
     .container {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        grid-gap: 5px;
+        grid-template-columns: repeat(12, auto);
+        grid-template-rows: auto;
     }
+
+    .container .wrap:nth-child(1) {
+        grid-column: span 6;
+        grid-row: span 2;
+        height: 418px;
+    }
+
+    .container .wrap:nth-child(2) {
+        grid-column: span 3;
+        height: 209px;
+    }
+
+    .container .wrap:nth-child(3) {
+        grid-column: span 3;
+        height: 209px;
+    }
+
+    .container .wrap:nth-child(4) {
+        grid-column: span 3;
+        height: 209px;
+    }
+
+    .container .wrap:nth-child(5) {
+        grid-column: span 3;
+        height: 209px;
+    }
+
+    .container .wrap:nth-child(6) {
+        grid-column: span 3;
+        height: 209px;
+    }
+
+    .container .wrap:nth-child(7) {
+        grid-column: span 3;
+        height: 209px;
+    }
+
+    .container .wrap:nth-child(8) {
+        grid-column: span 2;
+        height: 209px;
+    }
+
+    .container .wrap:nth-child(9) {
+        grid-column: span 2;
+        height: 209px;
+    }
+
+    .container .wrap:nth-child(10) {
+        grid-column: span 2;
+        height: 209px;
+    }
+
 </style>
